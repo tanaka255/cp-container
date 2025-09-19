@@ -1,0 +1,5 @@
+#!/bin/bash
+
+python3 /opt/ac-library/expander.py "$1"
+
+g++ -g -std=gnu++2b -O2 -Wall -Wextra -I /opt/ac-library -o "${2:-./a.out}" "$1"
