@@ -24,6 +24,6 @@
 	"postCreateCommand": "sudo chmod +x -R /workspaces/$(basename $PWD)/scripts",
 	"remoteEnv": {
 		"PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/scripts",
-		"CPLUS_INCLUDE_PATH": "/opt/ac-library"
+		"CPLUS_INCLUDE_PATH": "/opt/ac-library:/workspaces/cp-container/libraries"
 	}
 }
