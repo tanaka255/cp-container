@@ -1,0 +1,6 @@
+{
+  "name": "cp-container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
