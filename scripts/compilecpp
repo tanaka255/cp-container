@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+oj-bundle -I "/workspaces/cp-container/libraries" "${1}" > ./bundled.cpp
+
+python3 /opt/ac-library/expander.py ./bundled.cpp
+
+g++ -std=gnu++23 -O2 -Wall -Wextra -o "${2:-a.out}" ./bundled.cpp

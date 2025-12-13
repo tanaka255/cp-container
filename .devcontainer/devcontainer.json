@@ -3,6 +3,9 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/scripts:${containerEnv:PATH}"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
